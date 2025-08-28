@@ -1,0 +1,130 @@
+.container{
+width: 1920px;
+height: 3000px;
+margin: auto;
+}
+.top_bar{
+width: 1920px;
+height: 50px;
+font-family: "Partial Sans KR";
+background-color: #003F70;
+color: #E9E9E9;
+font-size: 13px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.menu{
+display: flex;
+gap: 45px;
+letter-spacing: 1.5px;
+}
+.header{
+width: 1920px;
+height: 950px;
+background-color: #E9E9E9;
+}
+.gnb{
+width: 1187px;
+height: 72px;
+margin: auto;
+border-bottom: 1px dashed #003F70;
+display: flex;
+align-items: center;
+}
+.gnb h2{
+  font-size: 25px;
+  font-family: "Partial Sans KR";
+  color: #003F70;
+  letter-spacing: 1.5px;
+  line-height: 72px;
+  margin-left: 4px;
+}
+.nav{
+  font-size: 18px;
+  font-family: "Pretendard";
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #222222;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 30px;
+  margin-left: 239px;
+}
+.search{
+  width: 180px;
+  height: 30px;
+  margin: auto;
+  color: #767676;
+  background-color: #F6F6F9;
+  border-radius: 12px;
+  font-size: 13px;
+  font-family: "Pretendard";
+  font-weight: 500;
+  box-shadow: -1px -1px 1px #FFFFFF;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+li.search a {
+  display: flex;           
+  align-items: center;     
+  gap: 8px;
+  margin-top: 5px;
+  margin-left: 12px;            
+}
+.login{
+  margin-top: 8px;
+}
+
+/* 전체 라벨 */
+.switch {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+}
+/* 체크박스 숨기기 */
+.switch input {
+  display: none;
+}
+/* 슬라이더 모양 */
+.slider {
+  position: relative;
+  width: 40px;
+  height: 28px;
+  border: 2px solid #003865;
+  background-color: #E9E9E9;
+  border-radius: 14px;
+  transition: background-color 0.3s;
+}
+/* 슬라이더 안 원 */
+.slider::before {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  left: 1.5px;
+  top: 1.5px;
+  background-color: #003F70;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+/* 체크 시 원 이동 & 배경 변경 */
+.switch input:checked + .slider::before {
+  transform: translateX(11px);
+}
+.label-text {
+  font-size: 20px;
+  font-family: "Pretendard";
+  font-weight: 600;
+  color: #003865;
+}
+.switch{
+  margin-top: 20px;
+  margin-left: 1450px;
+}
+
+.book{
+  margin-left: 363px;
+  margin-top: 75px;
+}
