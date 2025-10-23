@@ -9,7 +9,22 @@
 
   <link href="css/style.css" rel="stylesheet">
   <link href="css/book.css" rel="stylesheet">
-  <link href="css/footer2.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+  document.addEventListener('selectstart', function (e) {
+    e.preventDefault(); // 텍스트 드래그 방지
+  });
+
+  document.addEventListener('copy', function (e) {
+    e.preventDefault(); // Ctrl + C 복사 방지
+  });
+
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault(); // 오른쪽 클릭 방지
+  });
+</script>
 </head>
 
 <body>
@@ -19,8 +34,8 @@
       <div class="top_bar">
         <ul class="menu">
           <li><a href="#">민음사 출판 그룹</a></li>
-          <li><a href="#">민음사</a></li>
-          <li><a href="#">황금가지</a></li>
+          <li><a href="index.html">민음사</a></li>
+          <li><a href="index2.html">황금가지</a></li>
           <li><a href="#">사이언스북스</a></li>
           <li><a href="#">세미콜론</a></li>
           <li><a href="#">민음인</a></li>

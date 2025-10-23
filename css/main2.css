@@ -58,6 +58,10 @@
   letter-spacing: -2.5%;
   padding-left: 24px;
   padding-top: 20px;
+  cursor: pointer;
+}
+.icon-list li:hover{
+  background-color: #FFE8C8;
 }
 .icon-list img{
   margin-right: 20px;

@@ -56,6 +56,10 @@
   gap: 30px;
   margin-left: 336px;
 }
+.gnb .nav li:nth-of-type(1){
+  color: #F6B352;
+  font-weight: 600;
+}
 
 .search {
   width: 180px;

@@ -11,6 +11,22 @@
   <link href="css/header.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="css/footer.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    document.addEventListener('selectstart', function (e) {
+      e.preventDefault(); // 텍스트 드래그 방지
+    });
+
+    document.addEventListener('copy', function (e) {
+      e.preventDefault(); // Ctrl + C 복사 방지
+    });
+
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault(); // 오른쪽 클릭 방지
+    });
+  </script>
+
 </head>
 
 <body>
@@ -20,8 +36,8 @@
       <div class="top_bar">
         <ul class="menu">
           <li><a href="#">민음사 출판 그룹</a></li>
-          <li><a href="#">민음사</a></li>
-          <li><a href="#">황금가지</a></li>
+          <li><a href="index.html">민음사</a></li>
+          <li><a href="index2.html">황금가지</a></li>
           <li><a href="#">사이언스북스</a></li>
           <li><a href="#">세미콜론</a></li>
           <li><a href="#">민음인</a></li>
@@ -32,7 +48,7 @@
         </ul>
       </div>
       <div class="gnb">
-        <h2><a href="#">민음사</a></h2>
+        <h2><a href="index.html">민음사</a></h2>
         <ul class="nav">
           <li><a href="/book.html">도서</a></li>
           <li><a href="#">문학상</a></li>
@@ -59,19 +75,20 @@
     <div class="content">
       <div class="poster-wrap">
         <img class="poster" src="img/민음북클럽.png" alt="">
-        <p class="poster-text"><a href="#"> 민음북클럽 15기 바로가기</a></p>
+        <p class="poster-text"> 민음북클럽 15기 바로가기</p>
         <img class="poster" src="img/한편.png" alt="">
-        <p class="poster-text"><a href="#">인문잡지 &lt;&lt; 한편 &gt;&gt; 구독하기</a></p>
+        <p class="poster-text">인문잡지 &lt;&lt; 한편 &gt;&gt; 구독하기</p>
         <div class="icon">
           <ul class="icon-list">
-            <li><a href="#"><img src="img/icon1.png"><span>FAQ</span></a></li>
-            <li><a href="#"><img src="img/icon2.png"><span>민음북 샵</span></a></li>
-            <li><a href="#"><img src="img/icon3.png"><span>도서 목록 다운로드</span></a></li>
-            <li><a href="#"><img src="img/icon4.png"><span>세계 문화 전집 공동구매</span></a></li>
-            <li><a href="#"><img src="img/icon5.png"><span>민음 커뮤니티</span></a></li>
-            <li><a href="#"><img src="img/icon6.png"><span>동네 서점 EVENT & ORDER</span></a></li>
-            <li><a href="#"><img src="img/icon7.png"><span>민음사 TV 유튜브</span></a></li>
-            <li><a href="#"><img src="img/instagram.png"><img src="img/naver.png"><img src="img/twitter.png"><img src="img/facebook.png"></a></li>
+            <li><img src="img/icon1.png"><span>FAQ</span></li>
+            <li><img src="img/icon2.png"><span>민음북 샵</span></li>
+            <li><img src="img/icon3.png"><span>도서 목록 다운로드</span></li>
+            <li><img src="img/icon4.png"><span>세계 문화 전집 공동구매</span></li>
+            <li><img src="img/icon5.png"><span>민음 커뮤니티</span></li>
+            <li><img src="img/icon6.png"><span>동네 서점 EVENT & ORDER</span></li>
+            <li><img src="img/icon7.png"><span>민음사 TV 유튜브</span></li>
+            <li><img src="img/instagram.png"><img src="img/naver.png"><img src="img/twitter.png"><img
+                src="img/facebook.png"></li>
           </ul>
         </div>
       </div>
@@ -119,6 +136,21 @@
       <h1>MINUMSA</h1>
     </div>
   </div>
+
+    <script>
+    const switchLabel = document.querySelector(".switch");
+    const checkbox = switchLabel.querySelector("input");
+
+    switchLabel.addEventListener("click", function (e) {
+      e.preventDefault();
+      switchLabel.classList.toggle("active");
+      checkbox.checked = switchLabel.classList.contains("active");
+
+      setTimeout(() => {
+        window.location.href = "index.best.html";
+      }, 300);
+    });
+  </script>
 </body>
 
 </html>

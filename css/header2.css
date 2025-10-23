@@ -58,6 +58,7 @@
   gap: 30px;
   margin-left: 336px;
 }
+.nav li:hover{color: #F6B352;}
 
 .search {
   width: 180px;
@@ -108,7 +109,6 @@ li.search a {
   border: 2px solid #F6B352;
   background-color: #EDEDE9;
   border-radius: 14px;
-  transition: background-color 0.3s;
 }
 
 /* 슬라이더 안 원 */
@@ -124,10 +124,7 @@ li.search a {
   transition: transform 0.3s;
 }
 
-/* 체크 시 원 이동 & 배경 변경 */
-.switch input:checked+.slider::before {
-  transform: translateX(15px);
-}
+
 
 .label-text {
   font-size: 20px;

@@ -121,13 +121,8 @@ li.search a {
   top: 1.5px;
   background-color: #F6B352;
   border-radius: 50%;
-  transition: transform 0.3s;
 }
 
-/* 체크 시 원 이동 & 배경 변경 */
-.switch input:checked+.slider::before {
-  transform: translateX(15px);
-}
 
 .label-text {
   font-size: 20px;

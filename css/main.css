@@ -42,6 +42,8 @@
   transform: translate(479px, 220px);
   cursor: pointer;
 }
+
+.icon-list{cursor: pointer;}
 .icon-list li{
   width: 290px;
   height: 60px;
@@ -58,6 +60,10 @@
   letter-spacing: -2.5%;
   padding-left: 14px;
   padding-top: 14px;
+  transition: 0.1s ease-in-out;
+}
+.icon-list li:hover{
+  background-color: #DFF1FF;
 }
 .icon-list img{
   margin-right: 20px;
@@ -131,6 +137,6 @@
   line-height: 36px;
   color: #656565;
 }
-.blog p:first-of-type { /* 이벤트 첫 p만 위 패딩 50px */
+.blog p:first-of-type {
   padding-top: 15px; 
 }

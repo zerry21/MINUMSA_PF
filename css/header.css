@@ -52,6 +52,8 @@ align-items: center;
   gap: 30px;
   margin-left: 239px;
 }
+.nav li:hover{color: #003865;}
+
 .search{
   width: 180px;
   height: 30px;
@@ -109,10 +111,11 @@ li.search a {
   border-radius: 50%;
   transition: transform 0.3s;
 }
-/* 체크 시 원 이동 & 배경 변경 */
-.switch input:checked + .slider::before {
+/* 체크 시 원 이동 */
+.switch.active .slider::before {
   transform: translateX(11px);
 }
+
 .label-text {
   font-size: 20px;
   font-family: "Pretendard";
